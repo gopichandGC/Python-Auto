@@ -5,7 +5,6 @@ from requests.auth import HTTPBasicAuth
 import json
 import os
 
-
 url = "https://gopichand-vadlamudi.atlassian.net/rest/api/3/project"
 os.getenv("api_token")
 auth = HTTPBasicAuth("vadlamudigchand@gmail.com",api_token)
