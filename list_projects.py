@@ -3,11 +3,11 @@
 import requests
 from requests.auth import HTTPBasicAuth
 import json
+import os
+
 
 url = "https://gopichand-vadlamudi.atlassian.net/rest/api/3/project"
-api_token="ATATT3xFfGF0I4onq9THyaZQdfG-kGm_xeUId2MyuJE6UlTqlrVCABPuFbOUBxa7ORbCLauDdET0sYYT9b0GkZWEbhT1NOBkQzc0WOl5a_faI6k3_jDM0aMaaBkgXT8hrRBQO0jyspagfKh7pVrOFjj6iutRtXGa4c0hA-m66psp3j5Kbyxuqm4=3C0528D2"
- 
-
+os.getenv("api_token")
 auth = HTTPBasicAuth("vadlamudigchand@gmail.com",api_token)
 
 headers = {
